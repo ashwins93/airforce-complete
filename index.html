@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Air Force</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Air Force</h1>
+    </div>
+
+    <div id="controls" class="controls">
+      <div class="key-bind">
+        <div class="key">&uArr;</div>
+        <div class="description">Move up</div>
+      </div>
+      <div class="key-bind">
+        <div class="key">&dArr;</div>
+        <div class="description">Move down</div>
+      </div>
+      <div class="key-bind">
+        <div class="key">Z</div>
+        <div class="description">Fire projectile</div>
+      </div>
+      <button class="start">Start game</button>
+    </div>
+
+    <div style="position: relative">
+      <canvas class="hide"></canvas>
+      <div id="game-summary" class="game-summary hide">
+        <div>Game Over</div>
+        <div>You scored: <span id="score">0</span></div>
+        <button class="start">Restart</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
